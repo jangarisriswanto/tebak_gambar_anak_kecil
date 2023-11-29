@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tebak Gambar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tebak Gambar</h1>
+      <div class="game-container">
+        <img src="img/harimau.jpg" alt="guess this image" class="game-image" />
+        <form id="guess-form">
+          <input
+            type="text"
+            id="guess-input"
+            placeholder="Masukkan nama hewan..."
+            autofocus
+            autocomplete="off"
+          />
+          <button type="submit">Tebak</button>
+        </form>
+      </div>
+      <div id="table-container"></div>
+      <button id="restart-button" style="display: none">Main Lagi</button>
+    </div>
+    <!-- Tambahkan ini di dalam body HTML -->
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
